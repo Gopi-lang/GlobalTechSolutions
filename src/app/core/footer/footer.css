@@ -1,0 +1,64 @@
+.main-corporate-footer {
+  background-color: #0f141c;
+  border-top: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+.social-icon-row .social-btn {
+  width: 40px;
+  height: 40px;
+  color: rgba(255, 255, 255, 0.6);
+  border-color: rgba(255, 255, 255, 0.1) !important;
+  background-color: rgba(255, 255, 255, 0.02);
+  transition: all 0.25s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.social-icon-row .social-btn:hover {
+  color: #141b24;
+  background-color: #ffc107;
+  border-color: #ffc107 !important;
+  transform: translateY(-3px);
+}
+
+.footer-links-list li a {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 1rem;
+  display: inline-block;
+  transition: all 0.2s ease;
+}
+
+.footer-links-list li a .small-arrow {
+  font-size: 0.75rem;
+  transition: transform 0.2s ease;
+}
+
+.footer-links-list li a:hover {
+  color: #ffc107;
+  transform: translateX(4px);
+}
+
+.small-label {
+  font-size: 0.75rem;
+  margin-bottom: 2px;
+}
+
+.contact-hover-gold {
+  transition: color 0.2s ease;
+}
+
+.contact-hover-gold:hover {
+  color: #ffc107 !important;
+}
+
+.footer-heading-line::after {
+  content: '';
+  display: block;
+  width: 30px;
+  height: 2px;
+  background-color: #ffc107;
+  margin-top: 8px;
+  border-radius: 1px;
+}
+
+.footer-copyright-row {
+  border-color: rgba(255, 255, 255, 0.05) !important;
+}

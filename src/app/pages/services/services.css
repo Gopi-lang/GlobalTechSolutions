@@ -1,0 +1,127 @@
+/* Master Structural Layout Shield */
+.services-page-wrapper {
+  background-color: #141b24 !important;
+  color: #ffffff !important;
+  min-height: 100vh;
+  width: 100%;
+  display: block;
+  overflow: hidden;
+}
+
+/* Typography Overrides */
+.services-page-wrapper h1,
+.services-page-wrapper h2,
+.services-page-wrapper h3 {
+  color: #ffffff !important;
+}
+
+.text-light-muted {
+  color: rgba(255, 255, 255, 0.72) !important;
+  font-size: 0.96rem;
+  line-height: 1.75;
+}
+
+/* Portfolio Section Sub-Dividers */
+.portfolio-divider-header h2 {
+  font-size: 1.35rem;
+  letter-spacing: 0.5px;
+}
+
+/* Structural Separation Grid Borders */
+.operational-service-row {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.operational-service-row:last-child {
+  border-bottom: none;
+}
+
+/* Accent Ribbon Lines */
+.accent-gold-line {
+  display: inline-block;
+  width: 40px;
+  height: 3px;
+  background-color: #ffc107;
+  border-radius: 2px;
+}
+
+/* Image Matrix Scaling Framework */
+.premium-image-frame {
+  position: relative;
+  width: 100%;
+  max-width: 480px;
+  height: 290px;
+  margin: 0 auto;
+}
+/* Portfolio Section Sub-Dividers (Updated for Gold Text as seen in image_66181b.png) */
+/* Portfolio Section Sub-Dividers (Updated for Bold Gold Text as seen in image_66181b.png) */
+.portfolio-divider-header h2 {
+  color: #ffc107 !important;       /* Swaps heading text cleanly to your signature gold */
+  font-weight: 800 !important;     /* Enforces high-contrast extra bold formatting */
+  font-size: 1.35rem;
+  letter-spacing: 0.5px;
+}
+.service-display-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+  position: relative;
+  z-index: 2;
+  background-color: #1c2633;
+}
+
+/* Custom Component Box-Shadow Maps */
+.shadow-effect-orange .service-display-img {
+  box-shadow: 0 15px 35px rgba(255, 69, 27, 0.15);
+}
+
+.shadow-effect-gold .service-display-img {
+  box-shadow: 0 15px 35px rgba(255, 193, 7, 0.15);
+}
+
+/* Red High-Contrast Action Buttons */
+.btn-gt-action {
+  background-color: #e63946 !important;
+  color: #ffffff !important;
+  border: 1px solid #e63946 !important;
+  border-radius: 2px;
+  font-size: 0.85rem;
+  letter-spacing: 0.8px;
+  padding: 0.6rem 1.7rem !important;
+  display: inline-block;
+  text-decoration: none;
+  transition: all 0.25s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.btn-gt-action:hover {
+  background-color: transparent !important;
+  color: #e63946 !important;
+  box-shadow: 0 0 15px rgba(230, 57, 70, 0.3);
+  transform: translateY(-1px);
+}
+
+/* Global Helpers Layout Utilities */
+.max-w-2xl { max-width: 680px; }
+.mx-auto { margin-left: auto !important; margin-right: auto !important; }
+
+/* Mobile Touchscreen Breakdown Adjustments */
+@media (max-width: 767.98px) {
+  .display-4 {
+    font-size: 2.1rem !important;
+    line-height: 1.25 !important;
+  }
+  .portfolio-divider-header h2 {
+    font-size: 1.15rem !important;
+  }
+  .operational-service-row {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+  .premium-image-frame {
+    height: 220px;
+    margin-bottom: 1rem;
+  }
+}

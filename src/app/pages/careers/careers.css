@@ -1,0 +1,101 @@
+/* ==========================================================================
+   GLOBAL CORPORATE CAREERS SPECIFIC STYLESHEET
+   ========================================================================== */
+
+/* Forces system-specific background palette theme across the canvas */
+.bg-dark-slate {
+  background-color: #141b24 !important;
+}
+
+/* PREMIUM TRANSLUCENT CONTAINER CARDS
+  Applies semi-flat color variables, subtle borders, and an easing curve transform on state hover.
+*/
+.premium-slate-card {
+  background-color: #1c2633;
+  border-color: rgba(255, 255, 255, 0.05) !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  /* Cubic-bezier curve guarantees micro-interactions look organic */
+  transition: all 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Slight lift and amber color response when user hovers over a module card */
+.premium-slate-card:hover {
+  border-color: rgba(255, 193, 7, 0.25) !important;
+  background-color: #232f3f;
+  transform: translateY(-2px);
+}
+
+/* Decorative alignment accent bars located under headers */
+.accent-gold-line {
+  display: inline-block;
+  width: 35px;
+  height: 3px;
+  background-color: #ffc107;
+}
+
+/* Micro sizing setups for standard Bootstrap icons inside feedback cards */
+.star-rating-row i {
+  font-size: 0.85rem;
+  margin-right: 3px;
+}
+
+/* USER INITIALS CIRCULAR METADATA PLACEMENT
+  Generates a fixed-dimension circular badge container for text avatar backups.
+*/
+.profile-avatar-placeholder {
+  width: 44px;
+  height: 44px;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+  flex-shrink: 0; /* Prevents the circular flex element from squishing on tight screen layouts */
+}
+
+/* Secondary position text labels */
+.super-small {
+  font-size: 0.72rem;
+  display: block;
+  margin-top: 2px;
+}
+
+/* AMBER GOLD BUTTON ACTIONS INTERACTION SCHEME
+  Maintains system consistency across dynamic user interactive routes.
+*/
+.btn-gt-gold {
+  background-color: #ffc107 !important;
+  color: #141b24 !important;
+  border: 1px solid #ffc107 !important;
+  font-size: 0.85rem;
+  letter-spacing: 0.6px;
+  transition: all 0.25s ease;
+}
+
+.btn-gt-gold:hover {
+  background-color: transparent !important;
+  color: #ffc107 !important;
+  box-shadow: 0 0 15px rgba(255, 193, 7, 0.2);
+}
+
+/* CUSTOM STATIC HELPER CLASSES
+  Overrides standard bootstrap rules for precise layouts.
+*/
+.max-w-2xl { max-width: 650px; }
+.max-w-3xl { max-width: 780px; }
+.mx-auto { margin-left: auto !important; margin-right: auto !important; }
+.fs-7 { font-size: 0.85rem; }
+/* USER INITIALS & PORTRAIT PIC FRAME HOOKS */
+.profile-avatar-placeholder {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #141b24; /* Base fallback color tint if image asset is loading */
+  flex-shrink: 0;
+  border: 1.5px solid rgba(255, 193, 7, 0.4); /* Crisp gold profile frame contour ring */
+}
+
+/* Forces image nodes to fill out the circle geometry without stretch warping */
+.avatar-img-node {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}

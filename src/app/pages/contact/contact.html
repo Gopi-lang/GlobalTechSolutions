@@ -1,0 +1,120 @@
+<div class="enquiry-page-wrapper bg-dark-slate text-white py-5">
+  
+  <header class="enquiry-hero-header container text-center mb-5 pb-3">
+    <div class="d-flex align-items-center justify-content-center gap-2 mb-3">
+      <span class="accent-gold-line rounded"></span>
+      <span class="text-uppercase tracking-widest small fw-bold text-warning">Get In Touch</span>
+      <span class="accent-gold-line rounded"></span>
+    </div>
+    <h1 class="display-4 fw-extrabold mb-3 tracking-tight text-white">
+      Submit An Operational Enquiry
+    </h1>
+    <p class="fs-5 text-white text-opacity-75 max-w-2xl mx-auto lh-base mobile-body-text">
+      Have a requirement for international workforce deployments or project compliance handling? Send us your details below.
+    </p>
+  </header>
+
+  <section class="container py-2">
+    <div class="row g-5">
+      
+      <div class="col-lg-4 order-2 order-lg-1">
+        <div class="d-flex flex-column gap-4">
+          
+          <div class="p-4 border rounded-3 premium-slate-card">
+            <div class="channel-icon-circle text-warning bg-warning bg-opacity-10 mb-3 d-flex align-items-center justify-content-center">
+              <i class="bi bi-person-workspace fs-4"></i>
+            </div>
+            <h4 class="fw-bold h5 text-white mb-2">General Manager</h4>
+            <p class="text-white text-opacity-50 small lh-base mb-0">
+              For corporate partnerships, global tenders, or direct business escalations:<br>
+              <a href="tel:+919444456789" class="text-warning text-decoration-none fw-bold mt-2 d-inline-block">+91 94444 56789</a>
+            </p>
+          </div>
+
+          <div class="p-4 border rounded-3 premium-slate-card">
+            <div class="channel-icon-circle text-warning bg-warning bg-opacity-10 mb-3 d-flex align-items-center justify-content-center">
+              <i class="bi bi-people-fill fs-4"></i>
+            </div>
+            <h4 class="fw-bold h5 text-white mb-2">HR Manager</h4>
+            <p class="text-white text-opacity-50 small lh-base mb-0">
+              For candidate verification status, interview setups, or active career processing rules:<br>
+              <a href="tel:+919092906182" class="text-warning text-decoration-none fw-bold mt-2 d-inline-block">+91 9092906182</a>
+            </p>
+          </div>
+
+          <div class="p-4 border rounded-3 premium-slate-card">
+            <div class="channel-icon-circle text-warning bg-warning bg-opacity-10 mb-3 d-flex align-items-center justify-content-center">
+              <i class="bi bi-envelope-check-fill fs-4"></i>
+            </div>
+            <h4 class="fw-bold h5 text-white mb-2">Official Email</h4>
+            <p class="text-white text-opacity-50 small lh-base mb-0">
+              Dispatch detailed documentation folders, compliance details, or media briefs straight to:<br>
+              <a href="mailto:info@grandlifesolution.co.in" class="text-warning text-decoration-none fw-bold mt-2 d-inline-block">globaltechtravels.tours@gmail.com</a>
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="col-lg-8 order-1 order-lg-2">
+        <div class="p-4 p-md-5 border rounded-3 premium-slate-card shadow-lg">
+          
+          <h2 class="h3 fw-bold text-white mb-4 tracking-tight border-bottom border-secondary border-opacity-10 pb-3">
+            Enquiry Parameters
+          </h2>
+
+          <form #enquiryForm="ngForm" (ngSubmit)="onDispatchEnquiry(enquiryForm)" class="d-flex flex-column gap-3">
+            <div class="row g-3">
+              
+              <div class="col-md-6">
+                <label class="form-label text-white text-opacity-75 small fw-semibold">Your Name *</label>
+                <input type="text" name="userName" class="form-control framework-form-input" placeholder="Enter full name" required ngModel>
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-label text-white text-opacity-75 small fw-semibold">Phone Number *</label>
+                <input type="tel" name="userPhone" class="form-control framework-form-input" placeholder="Enter contact number" required ngModel>
+              </div>
+
+              <div class="col-md-12">
+                <label class="form-label text-white text-opacity-75 small fw-semibold">Email Address *</label>
+                <input type="email" name="userEmail" class="form-control framework-form-input" placeholder="name@domain.com" required ngModel>
+              </div>
+
+              <div class="col-md-12">
+                <label class="form-label text-white text-opacity-75 small fw-semibold">Enquiry Category *</label>
+                <select name="enquiryCategory" class="form-select framework-form-input" required ngModel>
+                  <option value="" disabled selected hidden>Select deployment or process type...</option>
+                  <option value="Overseas Recruitment Services">Overseas Recruitment Portfolio</option>
+                  <option value="Tours & Travels (Domestic & International)">Tours & Travels Subsystem</option>
+                  <option value="Interview Scheduling Setup">Interview Scheduling Setup</option>
+                  <option value="Candidate Verification Matrix">Candidate Verification Matrix</option>
+                  <option value="Compliance & Documentation">Compliance & Documentation</option>
+                  <option value="Insurance & Visa Coordination">Insurance & Visa Coordination</option>
+                  <option value="Corporate Integration Onboarding">Corporate Integration Onboarding</option>
+                  <option value="Service Post Departure Support">Service Post Departure Support</option>
+                </select>
+              </div>
+
+              <div class="col-md-12">
+                <label class="form-label text-white text-opacity-75 small fw-semibold">Detailed Message Brief *</label>
+                <textarea name="userMessage" class="form-control framework-form-input text-area-resize-lock" rows="5" placeholder="Outline specific project parameters or professional deployment needs here..." required ngModel></textarea>
+              </div>
+
+            </div>
+
+            <div class="pt-3 border-top border-secondary border-opacity-10 mt-2">
+              <button type="submit" [disabled]="!enquiryForm.valid" class="btn btn-gt-gold fw-bold px-4 py-2 text-uppercase tracking-wider">
+                Dispatch Enquiry
+              </button>
+            </div>
+
+          </form>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</div>

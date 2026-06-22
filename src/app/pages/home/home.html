@@ -1,0 +1,290 @@
+<!-- 
+  ========================================================================
+  DYNAMIC BACKGROUND HERO SLIDER SECTION
+  ========================================================================
+-->
+<div id="globalTechHeroCarousel" class="carousel slide carousel-fade position-relative bg-dark-slate">
+  
+  <!-- Left Navigation Arrow (Updated with unified data-bs targets) -->
+  <button class="side-nav-btn position-absolute start-0 d-none d-sm-flex" 
+          type="button" 
+          data-bs-target="#globalTechHeroCarousel" 
+          data-bs-slide="prev">
+    <i class="bi bi-chevron-left"></i>
+  </button>
+
+  <div class="carousel-inner h-100">
+    <div *ngFor="let sector of carouselSectors; let isFirst = first" 
+         class="carousel-item h-100" 
+         [class.active]="isFirst">
+      
+      <div class="hero-slide-frame">
+        <img [src]="sector.image" [alt]="sector.name" class="carousel-bg-img pro-zoom-effect">
+        <div class="dark-contrast-overlay"></div>
+        
+        <div class="container h-100 position-relative z-3 d-flex flex-column justify-content-center text-center text-md-start px-4 px-md-5">
+          <span class="text-uppercase tracking-wider small fw-bold text-warning mb-2 d-block anim-tag">
+            Global Enterprise Solutions
+          </span>
+          <h1 class="display-3 fw-extrabold text-white mb-3 mb-md-4 tracking-tight max-w-4xl anim-title">
+            {{ sector.name }}
+          </h1>
+          <p class="fs-5 text-white text-opacity-75 mb-0 max-w-2xl d-none d-md-block lh-base anim-desc">
+            Providing reliable, authorized technical recruitment solutions, global transit logistics, and project management workflows.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Right Navigation Arrow (Updated with unified data-bs targets) -->
+  <button class="side-nav-btn position-absolute end-0 d-none d-sm-flex" 
+          type="button" 
+          data-bs-target="#globalTechHeroCarousel" 
+          data-bs-slide="next">
+    <i class="bi bi-chevron-right"></i>
+  </button>
+  
+</div>
+
+<section class="about-feature-section py-5 position-relative">
+  <div class="container py-2 py-md-4">
+    <div class="row align-items-center g-5">
+      
+      <div class="col-lg-6 position-relative">
+        <div class="image-asymmetric-grid-wrapper">
+          
+          <div class="grid-img-card img-left-tall shadow-lg">
+            <img src="facility.png" alt="Technical Analytics Data Hub" class="w-100 h-100 object-fit-cover">
+          </div>
+          
+          <div class="grid-img-card img-right-top shadow-lg">
+            <img src="fmcg.png" alt="FMCG Sector Management" class="w-100 h-100 object-fit-cover">
+          </div>
+          
+          <div class="grid-img-card img-right-bottom shadow-lg">
+            <img src="construction.png" alt="On-Site Construction Workflows" class="w-100 h-100 object-fit-cover">
+          </div>
+          
+          <div class="experience-floating-badge shadow-lg bg-white d-flex flex-column align-items-center justify-content-center text-center">
+            <div class="badge-inner-ring border border-warning border-2 rounded-circle d-flex flex-column align-items-center justify-content-center">
+              <span class="fs-4 fw-extrabold text-dark-slate">25+</span>
+              <span class="badge-mini-text text-uppercase tracking-wider fw-bold">Years Of</span>
+              <span class="badge-mini-text text-uppercase tracking-wider fw-bold text-warning">Exp.</span>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      
+      <div class="col-lg-6">
+        <div class="about-right-content-pane ps-lg-3">
+          
+          <div class="d-flex align-items-center gap-2 mb-3 justify-content-center justify-content-md-start">
+            <span class="accent-gold-line rounded"></span>
+            <span class="text-uppercase tracking-widest small fw-bold text-warning">About Us</span>
+          </div>
+          
+          <h2 class="display-5 fw-extrabold text-white text-center text-md-start mb-2 tracking-tight heading-line-height">
+            Transforming Lives &<br class="d-none d-md-block"> Transforming Organizations
+          </h2>
+          
+          <p class="fs-6 text-white text-opacity-75 text-center text-md-start mb-4 lh-lg mobile-body-text">
+            We will deliver top professional recruitment solutions to employers and job seekers in the range of disciplines and verticals. To consistently deliver value to our clients through solutions and services that enable efficient recruitment and retention of human resources of appropriate capabilities and qualities better than any one else. Our mission is to help leading corporations create and sustain competitive advantage.
+          </p>
+          
+          <div class="row g-2 g-sm-3 feature-check-grid pt-2">
+            <div class="col-sm-6 col-12">
+              <div class="d-flex align-items-center gap-3 feature-check-item py-1 py-sm-2">
+                <i class="bi bi-check-circle-fill text-warning fs-5 flex-shrink-0"></i>
+                <span class="fw-bold text-white fs-6">Fabricator Foreman</span>
+              </div>
+            </div>
+            <div class="col-sm-6 col-12">
+              <div class="d-flex align-items-center gap-3 feature-check-item py-1 py-sm-2">
+                <i class="bi bi-check-circle-fill text-warning fs-5 flex-shrink-0"></i>
+                <span class="fw-bold text-white fs-6">Gougers</span>
+              </div>
+            </div>
+            <div class="col-sm-6 col-12">
+              <div class="d-flex align-items-center gap-3 feature-check-item py-1 py-sm-2">
+                <i class="bi bi-check-circle-fill text-warning fs-5 flex-shrink-0"></i>
+                <span class="fw-bold text-white fs-6">Welding Superintendent</span>
+              </div>
+            </div>
+            <div class="col-sm-6 col-12">
+              <div class="d-flex align-items-center gap-3 feature-check-item py-1 py-sm-2">
+                <i class="bi bi-check-circle-fill text-warning fs-5 flex-shrink-0"></i>
+                <span class="fw-bold text-white fs-6">Auto Welders</span>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<section class="services-row-section py-5">
+  <div class="container py-2 py-md-4">
+    
+    <div class="d-flex align-items-center gap-2 mb-3 justify-content-center justify-content-md-start">
+      <span class="accent-gold-line rounded"></span>
+      <span class="text-uppercase tracking-widest small fw-bold text-warning">What We Do</span>
+    </div>
+    
+    <h2 class="display-5 fw-extrabold text-white text-center text-md-start mb-5 tracking-tight">
+      International Manpower & Travel Consultants In India
+    </h2>
+
+    <div class="row g-3 g-md-4 pt-2">
+      
+      <div class="col-xl-3 col-md-6 col-12">
+        <div class="service-premium-card h-100 p-4 border rounded-3 text-white">
+          <div class="icon-circle-badge bg-warning bg-opacity-10 text-warning d-flex align-items-center justify-content-center mb-3 mb-md-4">
+            <i class="bi bi-gear-wide-connected fs-3"></i>
+          </div>
+          <h3 class="h5 fw-bold mb-2 mb-md-3 card-title-transition">Outsourcing Services</h3>
+          <p class="text-white text-opacity-75 mobile-body-text mb-0">
+            Integrated end-to-end outsourcing solutions for global businesses - we lead the way in end-to-end operational scaling.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-xl-3 col-md-6 col-12">
+        <div class="service-premium-card h-100 p-4 border rounded-3 text-white">
+          <div class="icon-circle-badge bg-warning bg-opacity-10 text-warning d-flex align-items-center justify-content-center mb-3 mb-md-4">
+            <i class="bi bi-building-up fs-3"></i>
+          </div>
+          <h3 class="h5 fw-bold mb-2 mb-md-3 card-title-transition">Recruitment Services</h3>
+          <p class="text-white text-opacity-75 mobile-body-text mb-0">
+            Recruitment and retention are critical to sustain company's productivity across competitive global fields with the best methods.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-xl-3 col-md-6 col-12">
+        <div class="service-premium-card h-100 p-4 border rounded-3 text-white">
+          <div class="icon-circle-badge bg-warning bg-opacity-10 text-warning d-flex align-items-center justify-content-center mb-3 mb-md-4">
+            <i class="bi bi-people-fill fs-3"></i>
+          </div>
+          <h3 class="h5 fw-bold mb-2 mb-md-3 card-title-transition">Workforce Staffing</h3>
+          <p class="text-white text-opacity-75 mobile-body-text mb-0">
+            GLS has been expert in contract staffing vertical, offering tailored global staffing structures and rapid deployment.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-xl-3 col-md-6 col-12">
+        <div class="service-premium-card h-100 p-4 border rounded-3 text-white">
+          <div class="icon-circle-badge bg-warning bg-opacity-10 text-warning d-flex align-items-center justify-content-center mb-3 mb-md-4">
+            <i class="bi bi-airplane-fill fs-3"></i>
+          </div>
+          <h3 class="h5 fw-bold mb-2 mb-md-3 card-title-transition">Tours & Travels</h3>
+          <p class="text-white text-opacity-75 mobile-body-text mb-0">
+            Authorized domestic transit routing and international corporate ticketing solutions managed via our comprehensive logistics desk.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="stats-counter-banner position-relative py-5 overflow-hidden">
+  <div class="stats-bg-graphic" style="background-image: url('assets/construction.jpg');"></div>
+  <div class="stats-tint-overlay"></div>
+
+  <div class="container position-relative z-3 py-2">
+    <div class="row align-items-center justify-content-center text-center g-4 divider-row">
+      
+      <div class="col-md-4 col-sm-6 col-12 stat-box-segment">
+        <div class="d-flex flex-column flex-sm-row align-items-center justify-content-center gap-2 gap-sm-3 px-2">
+          <div class="stat-icon-wrap rounded-circle bg-white text-warning d-flex align-items-center justify-content-center shadow mx-auto">
+            <i class="bi bi-briefcase-fill fs-4"></i>
+          </div>
+          <div class="text-center text-sm-start mt-2 mt-sm-0">
+            <h2 class="display-5 fw-extrabold text-white mb-0 tracking-tight">5m+</h2>
+            <p class="text-warning text-uppercase small tracking-wider fw-bold mb-0">Placements</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 col-12 stat-box-segment border-center-line">
+        <div class="d-flex flex-column flex-sm-row align-items-center justify-content-center gap-2 gap-sm-3 px-2">
+          <div class="stat-icon-wrap rounded-circle bg-white text-warning d-flex align-items-center justify-content-center shadow mx-auto">
+            <i class="bi bi-award-fill fs-4"></i>
+          </div>
+          <div class="text-center text-sm-start mt-2 mt-sm-0">
+            <h2 class="display-5 fw-extrabold text-white mb-0 tracking-tight">51k+</h2>
+            <p class="text-warning text-uppercase small tracking-wider fw-bold mb-0">Hours of Operations</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-12 col-12 stat-box-segment">
+        <div class="d-flex flex-column flex-sm-row align-items-center justify-content-center gap-2 gap-sm-3 px-2">
+          <div class="stat-icon-wrap rounded-circle bg-white text-warning d-flex align-items-center justify-content-center shadow mx-auto">
+            <i class="bi bi-person-workspace fs-4"></i>
+          </div>
+          <div class="text-center text-sm-start mt-2 mt-sm-0">
+            <h2 class="display-5 fw-extrabold text-white mb-0 tracking-tight">25+</h2>
+            <p class="text-warning text-uppercase small tracking-wider fw-bold mb-0">Top Level Positions</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="countries-filter-section py-5">
+  <div class="container py-2">
+
+    <div class="d-flex align-items-center gap-2 mb-4 justify-content-center justify-content-md-start">
+      <span class="accent-gold-line rounded"></span>
+      <span class="text-uppercase tracking-widest small fw-bold text-warning">Served Countries</span>
+    </div>
+
+    <div class="d-flex flex-row flex-nowrap overflow-x-auto gap-2 gap-md-4 filter-tabs-row mb-4 pb-2 scrollbar-hidden">
+      <button 
+        *ngFor="let country of ['All', 'Dubai', 'Qatar', 'Kuwait', 'Russia', 'Australia', 'Saudi Arabia']"
+        (click)="selectedCountry = country"
+        [class.active-tab]="selectedCountry === country"
+        class="btn filter-nav-btn fw-bold px-3 py-2 position-relative text-white border-0 bg-transparent text-nowrap">
+        {{ country }}
+      </button>
+    </div>
+
+    <div class="row g-3 g-md-4 filter-content-grid">
+      <ng-container *ngFor="let item of carouselSectors">
+        <div class="col-lg-4 col-md-6 col-12" *ngIf="selectedCountry === 'All'">
+          <div class="country-display-card overflow-hidden border rounded-3 position-relative">
+            <img [src]="item.image" [alt]="item.name" class="w-100 h-100 object-fit-cover card-zoom-img">
+            <div class="card-gradient-tint position-absolute inset-0 z-1"></div>
+            <div class="card-content-overlay position-absolute bottom-0 start-0 z-2 p-4 w-100">
+              <span class="badge bg-warning text-dark mb-2 fw-bold text-uppercase tracking-wider small-badge">Open Operations</span>
+              <h4 class="h6 fw-bold text-white mb-0">{{ item.name }}</h4>
+            </div>
+          </div>
+        </div>
+      </ng-container>
+
+      <div class="col-12 text-center py-4" *ngIf="selectedCountry !== 'All'">
+        <div class="py-5 px-3 border border-dashed rounded-3 border-secondary bg-dark-slate bg-opacity-50">
+          <i class="bi bi-globe-americas text-warning display-4 d-block mb-3"></i>
+          <h4 class="text-white fw-bold">Active Opportunities in {{ selectedCountry }}</h4>
+          <p class="text-white text-opacity-75 max-w-2xl mx-auto px-2 mt-2 mobile-body-text">
+            Explore premium placement opportunities and authorized technical project pipelines currently active within this region.
+          </p>
+          <a routerLink="/contact" class="btn btn-gt-gold fw-bold mt-3 px-4 py-2 rounded-1 text-uppercase tracking-wider small">Inquire About Openings</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>

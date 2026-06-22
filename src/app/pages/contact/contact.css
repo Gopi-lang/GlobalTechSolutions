@@ -1,0 +1,109 @@
+/* ==========================================================================
+   GLOBAL CORPORATE ENQUIRY VIEW PORT SPECIFIC CSS STYLESHEET
+   ========================================================================== */
+
+/* Forces dark-slate slate backing setup across workspace canvas blocks */
+.bg-dark-slate {
+  background-color: #141b24 !important;
+}
+
+/* PREMIUM TRANSLUCENT CONTAINER PANELS */
+.premium-slate-card {
+  background-color: #1c2633;
+  border-color: rgba(255, 255, 255, 0.05) !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Decorative visual ribbon alignment strips */
+.accent-gold-line {
+  display: inline-block;
+  width: 35px;
+  height: 3px;
+  background-color: #ffc107;
+}
+
+/* Icon layout framing segments */
+.channel-icon-circle {
+  width: 48px;
+  height: 48px;
+  border-radius: 4px;
+}
+
+/* PREMIUM FORM INPUT ELEMENT STYLES */
+.framework-form-input {
+  background-color: rgba(20, 27, 36, 0.6) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  border-radius: 4px !important;
+  color: #ffffff !important;
+  padding: 0.7rem 1rem !important;
+  font-size: 0.92rem !important;
+  transition: all 0.2s ease;
+}
+
+/* Input Placeholder Color Values Setup */
+.framework-form-input::placeholder {
+  color: rgba(255, 255, 255, 0.35) !important;
+}
+
+/* Selection list background fix */
+.framework-form-input option {
+  background-color: #1c2633 !important;
+  color: #ffffff !important;
+}
+
+/* Highlighting boundary focus transformations */
+.framework-form-input:focus {
+  background-color: rgba(20, 27, 36, 0.9) !important;
+  border-color: rgba(255, 193, 7, 0.4) !important;
+  box-shadow: 0 0 10px rgba(255, 193, 7, 0.1) !important;
+  outline: none !important;
+}
+
+/* Lock text sizing box parameters */
+.text-area-resize-lock {
+  resize: none;
+}
+
+/* AMBER GOLD ACTION CTA SUBMISSION BUTTONS MAPS */
+.btn-gt-gold {
+  background-color: #ffc107 !important;
+  color: #141b24 !important;
+  border: 1px solid #ffc107 !important;
+  font-size: 0.85rem;
+  letter-spacing: 0.6px;
+  border-radius: 2px;
+  transition: all 0.25s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.btn-gt-gold:hover {
+  background-color: transparent !important;
+  color: #ffc107 !important;
+  box-shadow: 0 0 15px rgba(255, 193, 7, 0.25);
+  transform: translateY(-1px);
+}
+
+.btn-gt-gold:disabled {
+  background-color: rgba(255, 193, 7, 0.4) !important;
+  border-color: transparent !important;
+  color: rgba(20, 27, 36, 0.6) !important;
+  cursor: not-allowed;
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+/* Static Positioning Bounds Helpers */
+.max-w-2xl { max-width: 650px; }
+.mx-auto { margin-left: auto !important; margin-right: auto !important; }
+
+/* Mobile Adaptability Viewport Parameters */
+@media (max-width: 767.98px) {
+  .display-4 {
+    font-size: 2.0rem !important;
+    line-height: 1.3 !important;
+  }
+  .mobile-body-text {
+    font-size: 0.88rem !important;
+    line-height: 1.6 !important;
+  }
+}

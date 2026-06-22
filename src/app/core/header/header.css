@@ -1,0 +1,91 @@
+/* ==========================================================================
+   GLOBAL CORPORATE HEADER SYSTEM (Charcoal Slate & Amber Gold Theme)
+   ========================================================================== */
+
+/* 1. Top Location Ribbon Strip */
+.top-info-ribbon {
+  background-color: #0f141c !important; /* Rich deep charcoal slate */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  font-size: 0.85rem;
+  letter-spacing: 0.3px;
+}
+
+/* 2. Main Navigation Panel Setup */
+.header-nav {
+  background-color: #141b24 !important; /* Master system charcoal slate palette */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  z-index: 1030; /* Ensures navbar stays layered on top of all components */
+}
+
+/* 3. Brand Identity Configurations */
+.brand-logo-img {
+  max-height: 100px;
+  width: auto;
+  object-fit: contain;
+  transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.navbar-brand:hover .brand-logo-img {
+  transform: scale(1.03);
+}
+
+/* 4. Link Interactions & Active State Map */
+.navbar-nav .nav-link {
+  font-size: 0.95rem;
+  letter-spacing: 0.4px;
+  transition: all 0.25s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffc107 !important; /* Amber Gold text response on hover */
+  opacity: 1 !important;
+}
+
+/* Dynamic Active State Rule (Triggered seamlessly by Angular RouterLinkActive) */
+.navbar-nav .nav-link.active-gold {
+  color: #ffc107 !important;
+  opacity: 1 !important;
+  font-weight: 600;
+  position: relative;
+}
+
+/* Subtle underlying accent indicator for active tabs on screen widths above mobile break thresholds */
+@media (min-width: 992px) {
+  .navbar-nav .nav-link.active-gold::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 10%;
+    width: 80%;
+    height: 2px;
+    background-color: #ffc107;
+    border-radius: 4px;
+  }
+}
+
+/* 5. Custom High-Contrast Enquiry Button CTA */
+.btn-gt-gold {
+  background-color: #ffc107 !important;
+  color: #141b24 !important;
+  border: 1px solid #ffc107;
+  font-size: 0.9rem;
+  letter-spacing: 0.3px;
+  transition: all 0.25s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.btn-gt-gold:hover {
+  background-color: transparent !important;
+  color: #ffc107 !important;
+  box-shadow: 0 0 15px rgba(255, 193, 7, 0.25);
+}
+
+/* Mobile Toggler Edge Layout Rules */
+.navbar-toggler {
+  padding: 0.4rem 0.6rem;
+  font-size: 1.1rem;
+}
+
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 0.25rem rgba(255, 193, 7, 0.15);
+}

@@ -1,0 +1,30 @@
+<!-- Top Unified Info Ribbon (Clean Location Strip) -->
+<div class="top-info-ribbon text-white py-2 small d-none d-md-block">
+  <div class="container d-flex justify-content-between">
+   
+  </div>
+</div>
+
+<!-- Main Corporate Header Navbar Block -->
+<nav class="navbar navbar-expand-lg navbar-dark header-nav py-3">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center gap-3 fw-bold fs-3 text-white" routerLink="/">
+      <img src="/logo.jpeg" alt="Global Tech Logo" height="60" class="d-inline-block align-top brand-logo-img">
+      GLOBAL TECH
+    </a>
+    <button class="navbar-toggler border-warning text-warning" type="button" data-bs-toggle="collapse" data-bs-target="#gtNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="gtNavbar">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-medium gap-3 align-items-center">
+        <li class="nav-item"><a class="nav-link text-white opacity-75" routerLink="/" routerLinkActive="active-gold" [routerLinkActiveOptions]="{exact: true}">Home</a></li>
+        <li class="nav-item"><a class="nav-link text-white opacity-75" routerLink="/about" routerLinkActive="active-gold">About Us</a></li>
+        <li class="nav-item"><a class="nav-link text-white opacity-75" routerLink="/services" routerLinkActive="active-gold">Services</a></li>
+        <li class="nav-item"><a class="nav-link text-white opacity-75" routerLink="/careers" routerLinkActive="active-gold">Feedback</a></li>
+        <li class="nav-item ms-lg-2">
+          <a routerLink="/contact" class="btn btn-gt-gold fw-bold px-4 rounded-1">Enquiry Now</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

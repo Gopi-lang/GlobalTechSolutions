@@ -1,0 +1,126 @@
+<!-- 
+  ========================================================================
+  CAREERS PAGE WORKSPACE WRAPPER 
+  Utilizes the system charcoal slate base background (#141b24) and white text color.
+  ========================================================================
+-->
+<div class="careers-page-wrapper bg-dark-slate text-white py-5">
+  
+  <!-- 
+    SECTION 1: HERO HEADER SEGMENT
+    Centers the typography and provides a responsive max-width boundary for optimal scanning.
+  -->
+  <header class="careers-hero-header container text-center mb-5 pb-3">
+    <!-- Inline flex row to map out tactical header gold accent lines -->
+    <div class="d-flex align-items-center justify-content-center gap-2 mb-3">
+      <span class="accent-gold-line rounded"></span>
+      <span class="text-uppercase tracking-widest small fw-bold text-warning">Success Stories</span>
+      <span class="accent-gold-line rounded"></span>
+    </div>
+    <h1 class="display-4 fw-extrabold mb-3 tracking-tight text-white">
+      What Our Candidates Say
+    </h1>
+    <p class="fs-5 text-white text-opacity-75 max-w-2xl mx-auto lh-base">
+      Read through the journey and placement experiences of professionals who successfully secured international roles through our deployment network.
+    </p>
+  </header>
+
+  <!-- 
+    SECTION 2: CANDIDATE FEEDBACKS GRID MATRIX
+    Employs Bootstrap's standard flexbox grid (.row with variable col layout blocks) 
+    to neatly tile 6 feedback cards based on the active browser viewport screen width.
+  -->
+  <!-- SECTION 2: CANDIDATE FEEDBACKS GRID MATRIX -->
+  <section class="container mb-5">
+    <div class="row g-4 justify-content-center">
+      
+      <!-- FEEDBACK NODE 1: ARUN MISHRA -->
+      <div class="col-lg-4 col-md-6">
+        <div class="feedback-node-card h-100 p-4 border rounded-3 premium-slate-card d-flex flex-column justify-content-between">
+          <div>
+            <div class="star-rating-row text-warning mb-3">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p class="feedback-text text-white text-opacity-75 small lh-lg mb-4">
+              "The document verification and trade screening workflows were incredibly smooth. They managed my entire visa and logistics transition to Saudi Arabia without a single delay. Highly recommended for technical specialists looking abroad!"
+            </p>
+          </div>
+          <div class="candidate-profile-footer border-top border-secondary border-opacity-10 pt-3 mt-auto d-flex align-items-center gap-3">
+            <!-- Text initials removed, swapped to a high-contrast image tag framework -->
+            <div class="profile-avatar-placeholder overflow-hidden shadow-sm">
+              <img src="dp1.png" alt="Arun Mishra Profile Pic" class="avatar-img-node">
+            </div>
+            <div>
+              <h4 class="h6 fw-bold text-white mb-0">Arun Mishra</h4>
+              <span class="text-warning super-small tracking-wider text-uppercase">CNC Machinist Placement</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FEEDBACK NODE 2: RAJESH KUMAR -->
+      <div class="col-lg-4 col-md-6">
+        <div class="feedback-node-card h-100 p-4 border rounded-3 premium-slate-card d-flex flex-column justify-content-between">
+          <div>
+            <div class="star-rating-row text-warning mb-3">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p class="feedback-text text-white text-opacity-75 small lh-lg mb-4">
+              "Exceptional transparency throughout the entire interviewing process. They matched me with a fantastic company in Oman and handled all compliance details perfectly. Truly professional consultants."
+            </p>
+          </div>
+          <div class="candidate-profile-footer border-top border-secondary border-opacity-10 pt-3 mt-auto d-flex align-items-center gap-3">
+            <div class="profile-avatar-placeholder overflow-hidden shadow-sm">
+              <img src="dp2.png" alt="Rajesh Kumar Profile Pic" class="avatar-img-node">
+            </div>
+            <div>
+              <h4 class="h6 fw-bold text-white mb-0">Rajesh Kumar</h4>
+              <span class="text-warning super-small tracking-wider text-uppercase">Electrical Supervisor</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FEEDBACK NODE 3: SANDEEP DAS -->
+      <div class="col-lg-4 col-md-6">
+        <div class="feedback-node-card h-100 p-4 border rounded-3 premium-slate-card d-flex flex-column justify-content-between">
+          <div>
+            <div class="star-rating-row text-warning mb-3">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+            </div>
+            <p class="feedback-text text-white text-opacity-75 small lh-lg mb-4">
+              "Great support during the orientation and post-departure onboarding. The team checked in regularly to make sure my accommodation and field transition in the UAE were up to standards. Excellent service!"
+            </p>
+          </div>
+          <div class="candidate-profile-footer border-top border-secondary border-opacity-10 pt-3 mt-auto d-flex align-items-center gap-3">
+            <div class="profile-avatar-placeholder overflow-hidden shadow-sm">
+              <img src="dp3.png" alt="Sandeep Das Profile Pic" class="avatar-img-node">
+            </div>
+            <div>
+              <h4 class="h6 fw-bold text-white mb-0">Sandeep Das</h4>
+              <span class="text-warning super-small tracking-wider text-uppercase">Rigging Inspector</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Apply the exact same structural template pattern to Feedbacks 4, 5, and 6 -->
+
+    </div>
+  </section>
+  <!-- 
+    SECTION 3: SIMPLE CONTACT LINK-OUT ACTION CARD
+    Encourages user conversion by providing a direct link back to the contact routing view.
+  -->
+  <section class="container text-center py-4">
+    <div class="p-5 border rounded-3 premium-slate-card max-w-3xl mx-auto">
+      <h3 class="h3 fw-bold text-white mb-3">Want to Start Your Journey?</h3>
+      <p class="text-white text-opacity-50 small max-w-2xl mx-auto mb-4">
+        Reach out directly to our human resources dispatch desk or visit our main evaluation complex to review current project frameworks.
+      </p>
+      <!-- Angular routerLink handles quick SPA navigation transitions safely -->
+      <a routerLink="/contact" class="btn btn-gt-gold fw-bold px-4 py-2 rounded-1 text-uppercase tracking-wider fs-7">Connect with an Expert</a>
+    </div>
+  </section>
+
+</div>

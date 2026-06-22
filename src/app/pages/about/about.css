@@ -1,0 +1,132 @@
+/* Core Structural Anchors Mapping Framework Colors */
+.bg-dark-slate {
+  background-color: #141b24 !important;
+}
+
+/* Translucent Card Components Block */
+.premium-slate-card {
+  background-color: #1c2633;
+  border-color: rgba(255, 255, 255, 0.05) !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.premium-slate-card:hover {
+  border-color: rgba(255, 193, 7, 0.25) !important;
+  background-color: #232f3f;
+  transform: translateY(-4px);
+}
+
+/* Accents */
+.accent-gold-line {
+  display: inline-block;
+  width: 35px;
+  height: 3px;
+  background-color: #ffc107;
+}
+
+/* Value Item Badge Containers */
+.value-badge {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgba(255, 193, 7, 0.1) !important; /* Semi-translucent gold tint */
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+.value-badge i {
+  font-size: 1.35rem !important; /* Crisp icon display layout */
+  color: #ffc107 !important;
+}
+
+/* Operational Step Timeline Mechanics */
+.step-circle-frame {
+  width: 110px;
+  height: 110px;
+  position: relative;
+  background-color: transparent;
+  transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.step-circle-internal {
+  background-color: #1c2633 !important;
+  transition: background-color 0.35s ease;
+}
+
+.step-circle-internal i {
+  transition: all 0.3s ease;
+}
+
+.step-counter {
+  width: 32px;
+  height: 32px;
+  top: -5px;
+  right: -5px;
+  font-size: 0.85rem;
+  border: 2px solid #ffc107;
+  z-index: 2;
+}
+
+/* Timeline Horizontal Track Line (Visible on XL Large Screen Layout viewports) */
+@media (min-width: 1200px) {
+  .timeline-track-row::before {
+    content: '';
+    position: absolute;
+    top: 72px;
+    left: 10%;
+    width: 73%;
+    height: 2px;
+    border-top: 2px dashed rgba(255, 193, 7, 0.2);
+    z-index: 0;
+  }
+}
+
+/* Interactive Timeline Animation States */
+.process-step-column:hover .step-circle-frame {
+  transform: scale(1.06) rotate(5deg);
+  border-color: #ffffff !important;
+  box-shadow: 0 0 25px rgba(255, 193, 7, 0.3);
+}
+
+.process-step-column:hover .step-circle-internal {
+  background-color: #232f3f !important;
+}
+
+.process-step-column:hover .step-circle-internal i {
+  color: #ffffff !important;
+  transform: scale(1.05);
+}
+
+.process-step-column:hover h4 {
+  color: #ffc107 !important;
+}
+
+/* Utility layout helpers */
+.mx-auto { margin-left: auto !important; margin-right: auto !important; }
+.super-small { font-size: 0.76rem; line-height: 1.5; }
+
+/* Mobile Touchscreen Compatibility Parameters Override */
+@media (max-width: 767.98px) {
+  .display-4 {
+    font-size: 2.1rem !important;
+    line-height: 1.25 !important;
+  }
+  .display-5 {
+    font-size: 1.85rem !important;
+    line-height: 1.3 !important;
+  }
+  .mobile-body-text {
+    font-size: 0.88rem !important;
+    line-height: 1.65 !important;
+  }
+  .process-step-column {
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+  }
+  .process-step-column:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+}
