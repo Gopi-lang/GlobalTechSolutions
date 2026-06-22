@@ -19,11 +19,12 @@
 }
 
 /* 3. Brand Identity Configurations */
+/* Custom Brand Logo Dimensions */
 .brand-logo-img {
-  max-height: 100px;
-  width: auto;
+  width: auto; /* Ensures width scales proportionally with height */
+  max-width: 150%;
   object-fit: contain;
-  transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+  border-radius: 10px; /* Optional: smooths out the white corners of the logo box */
 }
 
 .navbar-brand:hover .brand-logo-img {
